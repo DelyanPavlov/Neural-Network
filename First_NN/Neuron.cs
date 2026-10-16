@@ -29,6 +29,6 @@ public class Neuron
         {
             val += prevLayer[i].val * weights[i] + biases[i];
         }
-        val = Helper.Sigmoid(val / 4);
+        val = Helper.Sigmoid(val);
     }
 }

@@ -36,8 +36,8 @@ namespace First_NN
                 List<double> tempBiases = new List<double>();
                 for (int j = 0; j < inputSize; j++)
                 {
-                    tempWeights.Add(rand.NextDouble());
-                    tempBiases.Add(rand.NextDouble());
+                    tempWeights.Add(rand.NextDouble() * 2 - 1);
+                    tempBiases.Add(rand.NextDouble() * 2 - 1);
                 }
                 Hidden1.Add(new Neuron(tempWeights, tempBiases, 0));
             }
@@ -48,8 +48,8 @@ namespace First_NN
                 List<double> tempBiases = new List<double>();
                 for (int j = 0; j < hiddenSize[0]; j++)
                 {
-                    tempWeights.Add(rand.NextDouble());
-                    tempBiases.Add(rand.NextDouble());
+                    tempWeights.Add(rand.NextDouble() * 2 - 1);
+                    tempBiases.Add(rand.NextDouble() * 2 - 1);
                 }
                 Output.Add(new Neuron(tempWeights, tempBiases, 0));
             }
